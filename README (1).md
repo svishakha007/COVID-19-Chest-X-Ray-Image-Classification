@@ -67,8 +67,6 @@ per-class precision, recall, and F1-score.
 
 ## Repository Structure
 
-Arrange the project files in this structure:
-
 ``` text
 covid19-image-classification/
 ├── COVID19_Image_Classification.ipynb
@@ -76,7 +74,7 @@ covid19-image-classification/
 ├── app.py
 ├── templates/
 │   └── index.html
-├── covid19_dataset/              # local dataset; usually not committed
+├── covid19_dataset/           
 │   ├── train/
 │   │   ├── Covid/
 │   │   ├── Normal/
@@ -93,67 +91,6 @@ The dataset is expected to be arranged in class-specific folders. The
 dataset itself is not included in this README; add it only if you have
 permission to redistribute it and it complies with its license and
 privacy requirements.
-
-## Setup
-
-### 1. Clone the repository
-
-``` bash
-git clone https://github.com/<your-username>/<your-repository>.git
-cd <your-repository>
-```
-
-Replace the URL and repository name with your own GitHub details.
-
-### 2. Create and activate a virtual environment
-
-**Windows (PowerShell):**
-
-``` powershell
-python -m venv .venv
-.venv\Scripts\Activate.ps1
-```
-
-**macOS/Linux:**
-
-``` bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
-
-### 3. Install dependencies
-
-Create a `requirements.txt` file with compatible versions for the
-environment where you tested the project. The main packages used by the
-project are:
-
-``` text
-tensorflow
-numpy
-Flask
-Pillow
-```
-
-Then install them:
-
-``` bash
-pip install -r requirements.txt
-```
-
-TensorFlow installation requirements depend on your Python version and
-operating system. Use a compatible environment and verify that
-TensorFlow imports successfully before running the app.
-
-### 4. Add the model and dataset
-
-Place `covid19_model.keras` in the project root. For training or
-evaluation, arrange the dataset under `covid19_dataset/train/` and
-`covid19_dataset/test/`, with one subfolder per class.
-
-The notebook originally downloads the `train/` and `test/` prefixes from
-an Amazon S3 bucket. If you use your own bucket, update the bucket name
-and paths in the notebook. Do not commit AWS credentials or access keys
-to GitHub.
 
 ## Run the Notebook
 
@@ -211,12 +148,7 @@ model.
 
 ## Author
 
-**Your Name**\
+**Vishakha Saini**\
 MBA in Artificial Intelligence & Data Science\
-Add your LinkedIn profile and GitHub profile here.
+www.linkedin.com/in/vishakha-saini-39718b202
 
-## License
-
-Add a license only after confirming that you have the rights to license
-the code and that the dataset's terms permit your intended use. Dataset
-licensing and code licensing may be different.
