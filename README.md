@@ -1,4 +1,5 @@
 **COVID-19 Chest X-Ray Image Classification**
+
 A deep-learning project that classifies chest X-ray images into three categories: COVID, Normal, and Viral Pneumonia. The model was developed with TensorFlow/Keras in an Amazon SageMaker notebook, with Amazon S3 used for dataset storage. A Flask-based web interface was also prepared for image upload and prediction.
 
 **Important medical disclaimer:** This project is an educational/research prototype only. It is not validated for clinical use and must not be used to diagnose, treat, or rule out any medical condition.
