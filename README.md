@@ -1,13 +1,17 @@
-**COVID-19 Chest X-Ray Image Classification**
+****COVID-19 Chest X-Ray Image Classification****
 
 A deep-learning project that classifies chest X-ray images into three categories: COVID, Normal, and Viral Pneumonia. The model was developed with TensorFlow/Keras in an Amazon SageMaker notebook, with Amazon S3 used for dataset storage. A Flask-based web interface was also prepared for image upload and prediction.
 
-**Important medical disclaimer:** This project is an educational/research prototype only. It is not validated for clinical use and must not be used to diagnose, treat, or rule out any medical condition.
+**Important medical disclaimer:** 
+
+This project is an educational/research prototype only. It is not validated for clinical use and must not be used to diagnose, treat, or rule out any medical condition.
 
 **Project Overview**
+
 The goal is to explore how convolutional neural networks (CNNs) can learn visual patterns from chest X-ray images and classify them into one of three dataset labels.
 
 **Classes:**
+
 Covid
 Normal
 Viral Pneumonia
@@ -24,6 +28,7 @@ HTML/CSS --- upload interface
 NumPy --- array and prediction handling
 
 **Model Details**
+
 The model is a sequential CNN with the following main components:
 
 Input images resized to 128 × 128 pixels
@@ -44,6 +49,7 @@ Maximum planned epochs: 15
 Early stopping based on validation loss
 
 **Results**
+
 The recorded test accuracy was 66.67% on a test set of 66 images.
 
 This is a baseline result on a small dataset, not evidence of clinical reliability. Performance may vary with image quality, data distribution, and images from sources not represented in the training data. The notebook also includes code to calculate a confusion matrix and per-class precision, recall, and F1-score.
@@ -69,9 +75,11 @@ covid19-image-classification/
 └── README.md
 
 **Run the Notebook**
+
 Open COVID19_Image_Classification.ipynb in Jupyter or Amazon SageMaker and run the cells in order. The notebook covers dataset loading, preprocessing, augmentation, model training, evaluation, confusion-matrix calculation, saving/loading the model, and a sample prediction.
 
 **Run the Flask Web App**
+
 If app.py and templates/index.html are present and the dependencies are installed in the same Python environment, start the application with:
 python app.py
 Open the local address printed by Flask in your browser. If running on a remote SageMaker instance, additional port forwarding or a supported notebook proxy may be required; binding Flask to 0.0.0.0 alone does not make the application publicly accessible.
